@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,400i');
+
+body {
+  max-width: 960px;
+  color: #222;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  background-color: #eee;
+
+}
+
+header {
+
+
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 1fr 2fr 5fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "name name bassoon"
+  "address address address"
+  "headshot . ."
+  "headshot nav nav";
+}
+
+#name {
+  grid-area: name;
+  font-size: 350%;
+  margin-top: 0;
+  margin-bottom:  0;
+}
+
+
+
+
+#bassoon {
+  grid-area: bassoon;
+  font-family: 'Playfair Display', serif;
+  font-size: 350%;
+
+  margin-bottom: 0;
+
+  font-style: italic;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-area: nav;
+}
+
+
+nav li {
+  font-size: 110%;
+  display: inline-block;
+  padding-top: 5px;
+
+}
+
+nav li:after {
+  content: " |";
+}
+
+
+#headshot {
+  grid-area: headshot;
+  margin: 0;
+}
+
+img {
+  border: 2px solid rgb(5,125,0);
+  border-radius: 20px;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+
+  grid-template-areas:
+  "performance-experience"
+  "education"
+  "teachers"
+  "masterclass"
+  "summer";
+}
+
+section {
+  border-bottom: 2px solid;
+
+}
+
+#performance-experience {
+  grid-area: performance-experience;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 2fr 1.7fr;
+  grid-template-areas:
+  "a a"
+  "b c";
+}
+
+#education {
+  grid-area: education;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "a"
+  "b";
+}
+
+
+#teachers {
+  grid-area: teachers;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-areas:
+  "a a"
+  "b c";
+}
+
+#masterclass {
+  grid-area: masterclass;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "a"
+  "b";
+}
+
+#masterclass li {
+  display: inline;
+}
+
+#masterclass li:after {
+  content: " |" ;
+}
+
+#summer {
+  grid-area: summer;
+  display: grid;
+  grid-gap: 2px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: none;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "a"
+  "b";
+
+}
+
+ h2 {
+  font-size: 175%;
+  grid-area: a;
+
+}
+
+ .left {
+  grid-area: b;
+}
+
+ .right {
+  grid-area: c;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+address{
+  font-size: 85%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+  "home phone"
+  "home email";
+  grid-area: address;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+#email {
+  grid-area: email;
+}
+
+#phone {
+  grid-area: phone;
+}
+
+#home {
+  grid-area: home;
+}
+
+
+
+article{
+
+  margin-bottom: 15px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(5,125,0,1);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgba(5,125,0,0.7);
+}
+
+a:visited {
+  color: rgba(5,125,0,1);
+}
