@@ -7,7 +7,6 @@ body {
   font-size: 16px;
   color: #333;
   background: #fff;
-
 }
 
 header {
@@ -33,19 +32,14 @@ footer {
   padding: 10px;
 }
 
-address {
-  color: #fff;
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
 }
 
 h1{
   font-size: 250%;
   color: #fff;
-}
-
-
-h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
-  margin: 0;
 }
 
 h2{
@@ -63,7 +57,6 @@ img {
   width: auto;
   border: 2px solid rgb(0,135,0);
   border-radius: 5px;
-
 }
 
 iframe {
@@ -71,13 +64,13 @@ iframe {
   border-radius: 5px;
 }
 
-
 audio {
   border: 2px solid rgb(0,135,0);
   border-radius: 5px;
 }
 
 address {
+  color: #fff;
   font-style: normal;
   display: grid;
   grid-template-columns: 1fr 3.4fr;
@@ -127,7 +120,11 @@ li {
 }
 
  li.description {
-  display: block
+  display: block;
+}
+
+section.resume{
+  border-bottom: solid 2px #333;
 }
 
 .wrapper {
@@ -154,141 +151,6 @@ li {
 .title {
   margin-top : 20px;
   margin-bottom: 5px;
-}
-
-#headshot {
-  height: 180px;
-  width: auto;
-  float: left;
-
-  margin-right: 5px;
-  margin-top: 2px ;
-
-}
-
-#lessons-pic {
-  height: 300px;
-  width: auto;
-  float: left;
-  margin-right: 5px;
-  margin-top: 2px;
-}
-
-#performance-experience {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  grid-column-gap: 30px;
-  grid-template-areas:
-  "left right"
-}
-
-#teachers {
-  display: grid;
-  grid-template-columns: 1fr 1.8fr;
-  grid-column-gap: 30px;
-  grid-template-areas:
-  "left right"
-}
-
-#email {
-  grid-area: email;
-}
-
-#phone {
-  grid-area: phone;
-}
-
-#home {
-  grid-area: home;
-}
-
-#splitting-grid {
-  grid-area: splitting;
-  display: grid;
-  grid-template-columns: 1fr 2fr ;
-  grid-gap: 5px;
-  grid-template-areas:
-  "img1 img2"
-  "description1 description2"
-;
-}
-
-
-#gouging-grid {
-  grid-area: gouging;
-  display: grid;
-  grid-template-columns: 1fr 2fr 3fr 4fr;
-  grid-gap:5px;
-  grid-template-areas:
-  "img1 img2 img3 img4"
-  "description1 description2 description3 description4"
-;
-}
-
-#shaping-grid {
-  grid-area: shaping;
-  display: grid;
-  grid-template-columns: 1fr 5fr 12fr;
-  grid-gap:5px;
-  grid-template-areas:
-  "img1 img2 img3"
-  "description1 description2 description3"
-;
-}
-
-#wrapping-grid {
-  grid-area: wrapping;
-  display: grid;
-  grid-template-columns: 1fr 9fr;
-  grid-gap:5px;
-  grid-template-areas:
-  "img1 img2"
-  "description1 description2"
-;
-}
-
-#finishing-grid {
-  grid-area: finishing;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap:5px;
-  grid-template-areas:
-  "img1 img2"
-  "description1 description2"
-;
-}
-
-
-
-#reed-nav {
-  display: inline-block;
-  float: right;
-
-  width: 384px;
-  padding-right: 0px;
-  background: #333;
-  border: solid 2px;
-  border-radius: 5px;
-  margin-bottom: 0;
-  margin-left: 0px;
-
-
-}
-
-#summer {
-  border: none;
-}
-
-#reed-li-last {
-  border: none;
-}
-
-#masterclass-li-last::after {
-  content: none;
-}
-
-section.resume{
-  border-bottom: solid 2px #333;
 }
 
 .masterclass-li {
@@ -365,6 +227,125 @@ section.resume{
   grid-area: right;
 }
 
+#headshot {
+  height: 180px;
+  width: auto;
+  float: left;
+  margin-right: 5px;
+  margin-top: 2px ;
+}
+
+#lessons-pic {
+  height: 300px;
+  width: auto;
+  float: left;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+#performance-experience {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  grid-column-gap: 30px;
+  grid-template-areas:
+  "left right";
+}
+
+#teachers {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  grid-column-gap: 30px;
+  grid-template-areas:
+  "left right";
+}
+
+#email {
+  grid-area: email;
+}
+
+#phone {
+  grid-area: phone;
+}
+
+#home {
+  grid-area: home;
+}
+
+#splitting-grid {
+  grid-area: splitting;
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  grid-gap: 5px;
+  grid-template-areas:
+  "img1 img2"
+  "description1 description2";
+}
+
+#gouging-grid {
+  grid-area: gouging;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 4fr;
+  grid-gap:5px;
+  grid-template-areas:
+  "img1 img2 img3 img4"
+  "description1 description2 description3 description4";
+}
+
+#shaping-grid {
+  grid-area: shaping;
+  display: grid;
+  grid-template-columns: 1fr 5fr 12fr;
+  grid-gap:5px;
+  grid-template-areas:
+  "img1 img2 img3"
+  "description1 description2 description3";
+}
+
+#wrapping-grid {
+  grid-area: wrapping;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-gap:5px;
+  grid-template-areas:
+  "img1 img2"
+  "description1 description2";
+}
+
+#finishing-grid {
+  grid-area: finishing;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap:5px;
+  grid-template-areas:
+  "img1 img2"
+  "description1 description2";
+}
+
+#reed-nav {
+  display: inline-block;
+  float: right;
+
+  width: 384px;
+  padding-right: 0px;
+  background: #333;
+  border: solid 2px;
+  border-radius: 5px;
+  margin-bottom: 0;
+  margin-left: 0px;
+}
+
+#summer {
+  border: none;
+}
+
+#reed-li-last {
+  border: none;
+}
+
+#masterclass-li-last::after {
+  content: none;
+}
+
 @media(max-width: 768px){
 
   body {
@@ -374,7 +355,17 @@ section.resume{
     width: auto;
   }
 
+  img {
+    max-width: 65%;
+    height: auto;
+  }
 
+  .button a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 120%;
+    padding: 0;
+    padding-left: 0;
+  }
 
   #performance-experience{
     grid-template-columns: 1fr;
@@ -388,10 +379,7 @@ section.resume{
     grid-template-areas:
     "left"
     "right";
-
   }
-
-
 
   #splitting-grid {
     grid-area: splitting;
@@ -402,10 +390,8 @@ section.resume{
     "img1"
     "description1"
     "img2"
-    "description2"
-  ;
+    "description2";
   }
-
 
   #gouging-grid {
     grid-area: gouging;
@@ -420,8 +406,7 @@ section.resume{
     "img3"
     "description3"
     "img4"
-    "description4"
-  ;
+    "description4";
   }
 
   #shaping-grid {
@@ -435,8 +420,7 @@ section.resume{
     "img2"
     "description2"
     "img3"
-    "description3"
-  ;
+    "description3";
   }
 
   #wrapping-grid {
@@ -448,8 +432,7 @@ section.resume{
     "img1"
     "description1"
     "img2"
-     "description2"
-  ;
+     "description2";
   }
 
   #finishing-grid {
@@ -461,21 +444,7 @@ section.resume{
     "img1"
     "description1"
     "img2"
-    "description2"
-  ;
-  }
-
-  img {
-    max-width: 65%;
-    height: auto;
-
-  }
-
-  .button a{
-    font-family: 'Oswald', sans-serif;
-    font-size: 120%;
-    padding: 0;
-    padding-left: 0;
+    "description2";
   }
 
   #reed-nav {
@@ -484,10 +453,6 @@ section.resume{
     width: 100%;
     margin-left: 0px;
     margin-right: 5px;
-
-
-
-
   }
 }
 
@@ -511,6 +476,37 @@ h3 {
   font-size: 110%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+address {
+  display: block;
+}
+
+
+li {
+  display: block;
+}
+
+.button a{
+  font-family: 'Oswald', sans-serif;
+  font-size: 120%;
+  padding: 0;
+  padding-left: 0;
+}
+
+.masterclass-li {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.masterclass-li::after {
+  content: none;
+}
 
 #performance-experience{
   grid-template-columns: 1fr;
@@ -527,24 +523,8 @@ h3 {
 
 }
 
-address {
-  display: block;
-}
-
-
-li {
-  display: block;
-}
-
 #headshot {
   display: none;
-}
-
-.button a{
-  font-family: 'Oswald', sans-serif;
-  font-size: 120%;
-  padding: 0;
-  padding-left: 0;
 }
 
 #reed-nav {
@@ -553,18 +533,7 @@ li {
   width: auto;
   margin-left: 0px;
   margin-right:0;
-
-
-
-
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-
-}
-
 
 #splitting-grid {
   grid-area: splitting;
@@ -575,10 +544,8 @@ img {
   "img1"
   "description1"
   "img2"
-  "description2"
-;
+  "description2";
 }
-
 
 #gouging-grid {
   grid-area: gouging;
@@ -593,8 +560,7 @@ img {
   "img3"
   "description3"
   "img4"
-  "description4"
-;
+  "description4";
 }
 
 #shaping-grid {
@@ -608,8 +574,7 @@ img {
   "img2"
   "description2"
   "img3"
-  "description3"
-;
+  "description3";
 }
 
 #wrapping-grid {
@@ -621,8 +586,7 @@ img {
   "img1"
   "description1"
   "img2"
-   "description2"
-;
+   "description2";
 }
 
 #finishing-grid {
@@ -634,25 +598,10 @@ img {
   "img1"
   "description1"
   "img2"
-  "description2"
-;
+  "description2";
 }
 
 #lessons-pic{
   display: none;
 }
-
-.masterclass-li {
-  display: block;
-  margin-bottom: 10px;
-  padding: 0;
-}
-
-.masterclass-li::after {
-  content: none;
-}
-
-
-
-
 }
