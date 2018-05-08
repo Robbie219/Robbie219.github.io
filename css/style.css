@@ -361,3 +361,172 @@ section.resume{
 .right {
   grid-area: right;
 }
+
+@media(max-width: 414px) {
+body {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: auto;
+}
+
+h1{
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 135%;
+}
+
+h3 {
+  font-size: 110%;
+}
+
+
+#performance-experience{
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "left"
+  "right";
+}
+
+#teachers {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "left"
+  "right";
+
+}
+
+address {
+  display: block;
+}
+
+.video {
+  display: none;
+}
+
+li {
+  display: block;
+}
+
+#headshot {
+  display: none;
+}
+
+.button a{
+  font-family: 'Oswald', sans-serif;
+  font-size: 120%;
+  padding: 0;
+  padding-left: 0;
+}
+
+#reed-nav {
+  display: inline-block;
+  float: none;
+  width: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+
+
+
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+#splitting-grid {
+  grid-area: splitting;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+  "img1"
+  "description1"
+  "img2"
+  "description2"
+;
+}
+
+
+#gouging-grid {
+  grid-area: gouging;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:5px;
+  grid-template-areas:
+  "img1"
+  "description1"
+  "img2"
+  "description2"
+  "img3"
+  "description3"
+  "img4"
+  "description4"
+;
+}
+
+#shaping-grid {
+  grid-area: shaping;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:5px;
+  grid-template-areas:
+  "img1"
+  "description1"
+  "img2"
+  "description2"
+  "img3"
+  "description3"
+;
+}
+
+#wrapping-grid {
+  grid-area: wrapping;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:5px;
+  grid-template-areas:
+  "img1"
+  "description1"
+  "img2"
+   "description2"
+;
+}
+
+#finishing-grid {
+  grid-area: finishing;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:5px;
+  grid-template-areas:
+  "img1"
+  "description1"
+  "img2"
+  "description2"
+;
+}
+
+#lessons-pic{
+  display: none;
+}
+
+.masterclass-li {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.masterclass-li::after {
+  content: none;
+}
+
+
+
+
+}
