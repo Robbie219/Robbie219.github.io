@@ -362,6 +362,132 @@ section.resume{
   grid-area: right;
 }
 
+@media(max-width: 768px){
+
+  body {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+  }
+
+
+
+  #performance-experience{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "left"
+    "right";
+  }
+
+  #teachers {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "left"
+    "right";
+
+  }
+
+
+
+  #splitting-grid {
+    grid-area: splitting;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "img1"
+    "description1"
+    "img2"
+    "description2"
+  ;
+  }
+
+
+  #gouging-grid {
+    grid-area: gouging;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+    grid-template-areas:
+    "img1"
+    "description1"
+    "img2"
+    "description2"
+    "img3"
+    "description3"
+    "img4"
+    "description4"
+  ;
+  }
+
+  #shaping-grid {
+    grid-area: shaping;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+    grid-template-areas:
+    "img1"
+    "description1"
+    "img2"
+    "description2"
+    "img3"
+    "description3"
+  ;
+  }
+
+  #wrapping-grid {
+    grid-area: wrapping;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+    grid-template-areas:
+    "img1"
+    "description1"
+    "img2"
+     "description2"
+  ;
+  }
+
+  #finishing-grid {
+    grid-area: finishing;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+    grid-template-areas:
+    "img1"
+    "description1"
+    "img2"
+    "description2"
+  ;
+  }
+
+  img {
+    max-width: 65%;
+    height: auto;
+
+  }
+
+  .button a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 120%;
+    padding: 0;
+    padding-left: 0;
+  }
+
+  #reed-nav {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 5px;
+
+
+
+
+  }
+}
+
 @media(max-width: 414px) {
 body {
   font-size: 20px;
@@ -425,8 +551,8 @@ li {
   display: inline-block;
   float: none;
   width: auto;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0px;
+  margin-right:0;
 
 
 
